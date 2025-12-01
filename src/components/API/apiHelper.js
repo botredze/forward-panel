@@ -9,9 +9,12 @@ const AUTH = {
 };
 
 function getBaseUrl() {
+    const hostname = window.location.hostname;
+
     const isLocal =
-        typeof window !== 'undefined' &&
-        ['localhost', '127.0.0.1', '77.235.25.68'].includes(window.location.hostname);
+        hostname === 'localhost' ||
+        hostname === '127.0.0.1' ||
+        /^\d{1,3}(\.\d{1,3}){3}$/.test(hostname);
 
     return isLocal ? localUrl : mainUrl;
 }

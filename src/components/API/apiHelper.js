@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const localUrl = 'http://77.235.25.68/api';
+const localUrl = 'http://192.168.2.20/api';
 const mainUrl = 'http://77.235.25.68/api';
 
 const AUTH = {
@@ -11,7 +11,7 @@ const AUTH = {
 function getBaseUrl() {
     const isLocal =
         typeof window !== 'undefined' &&
-        ['localhost', '127.0.0.1'].includes(window.location.hostname);
+        ['localhost', '127.0.0.1', '77.235.25.68'].includes(window.location.hostname);
 
     return isLocal ? localUrl : mainUrl;
 }
@@ -95,8 +95,6 @@ export default async function getComputerList() {
         });
 
         const computerListSorted = computerList.sort((a, b) => a.number - b.number);
-
-        console.log(computerListSorted, 'computerListSorted');
 
         return computerListSorted;
     } catch (err) {

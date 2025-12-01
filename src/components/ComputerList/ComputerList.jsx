@@ -16,9 +16,7 @@ const ComputerList = () => {
         try {
             const data = await getComputerList();
 
-            console.log(data, 'data');
             setComputerList(data);
-            console.log(data);
         } catch (error) {
             console.error('Ошибка при получении списка компьютеров:', error);
         }

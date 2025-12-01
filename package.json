@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/preset-env": "^7.28.5",
     "axios": "^1.7.9",
+    "core-js": "^3.47.0",
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
+    "regenerator-runtime": "^0.14.1",
     "sass": "^1.83.4",
     "scss": "^0.2.4"
   },
@@ -27,7 +30,9 @@
     "production": [
       ">0.2%",
       "not dead",
-      "not op_mini all"
+      "not op_mini all",
+      "Android >= 6",
+      "last 2 versions"
     ],
     "development": [
       "last 1 chrome version",

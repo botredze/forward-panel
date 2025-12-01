@@ -4,7 +4,15 @@
   gap: 40px;
   padding: 20px;
   padding-right: 50px;
-}
+
+  @media (max-width: 500px) {
+    padding: 0;
+    padding-right: 0;
+    width: 80vh;
+    align-items: center;
+    align-self: center;
+  }
+  }
 
 .titleVip{
   display: flex;
@@ -29,7 +37,12 @@
   flex-direction: row;
   gap: 60px;
   align-items: flex-end;
-}
+
+  @media (max-width: 500px) {
+    gap: 30px;
+  }
+
+  }
 
 .computerRad{
   display: flex;

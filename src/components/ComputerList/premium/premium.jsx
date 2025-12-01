@@ -16,6 +16,10 @@ const Premium = ({ psList }) => {
                 <h3>PREMIUM ЗАЛ</h3>
             </div>
 
+            <div className="titleComfortPlusMobile">
+                <h3>PREMIUM ЗАЛ</h3>
+            </div>
+
             <div className="stenkaButtom">
                 {group2.map((pc) => (
                     <PcItem key={pc.number} pc={pc} />

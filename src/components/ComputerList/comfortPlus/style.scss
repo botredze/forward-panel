@@ -5,12 +5,27 @@
   align-items: flex-end;
   padding: 20px;
 
+  @media (max-width: 500px) {
+    padding: 0;
+    align-items: center;
+    width: 80vh;
+    gap: 40px
+  }
+
+
   .comfortPlus_inner{
     display: flex;
     flex-direction: row;
     gap: 90px;
     align-items: flex-end;
     padding: 20px;
+
+    @media (max-width: 500px) {
+      padding: 0;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px
+    }
 
   }
 
@@ -58,7 +73,35 @@
   height: 80px;
   width: 400px;
 
+  @media (max-width: 500px) {
+    display: none;
+  }
+
   h3 {
+    padding: 5px 20px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #4d56c5
+  }
+}
+
+.titleComfortPlusMobile{
+  display: none;
+  display: flex !important;
+  align-self: center;
+  border: 5px solid #444444;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 400px;
+  margin: 0 auto;
+
+  @media (max-width: 500px) {
+    display: block;
+  }
+
+    h3 {
     padding: 5px 20px;
     font-size: 36px;
     font-weight: 700;

@@ -1,6 +1,14 @@
 .mainContainer {
     width: 99vw;
     height: 89vh;
+
+  @media (max-width: 500px) {
+  width: 100wh;
+    height: 90wh;
+  }
+
+
+    .desktopContainer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -10,11 +18,17 @@
     position: relative;
 
     .row {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        align-items: flex-end;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: flex-end;
     }
+
+    @media (max-width: 500px) {
+      width: 100%;
+      display: none;
+    }
+  }
 }
 
 .standartComfortSection {
@@ -71,4 +85,21 @@
     border-radius: 30px;
 
   border: 3px solid #000;
+}
+
+
+.mobileContainer {
+  display: none;
+
+
+  @media (max-width: 500px) {
+    display: block;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    padding-bottom: 100px;
+  }
 }

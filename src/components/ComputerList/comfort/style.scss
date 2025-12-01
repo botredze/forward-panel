@@ -6,13 +6,23 @@
 
   gap: 100px;
 
+  @media (max-width: 500px) {
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    width: 75vh;
+  }
+
   .comfortMain_inner{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 170px;
 
-    .stenka{
+    @media (max-width: 500px) {
+      gap: 93px
+    }
+      .stenka{
       display: flex;
       flex-direction: column;
       gap: 40px;
@@ -50,6 +60,10 @@
   justify-content: center;
   height: 80px;
   width: 350px;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
 
   h3 {
     padding: 5px 20px;

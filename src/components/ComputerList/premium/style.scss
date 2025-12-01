@@ -4,12 +4,24 @@
     gap: 50px;
     padding: 30px;
 
+  @media (max-width: 500px) {
+    width: 75vh;
+    padding: 0;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+
     .stenkaTop {
         padding-left: 180px;
         display: flex;
         flex-direction: row;
         gap: 10px;
-    }
+
+      @media (max-width: 500px) {
+        padding: 0;
+      }
+      }
 
     .stenkaButtom {
         display: flex;

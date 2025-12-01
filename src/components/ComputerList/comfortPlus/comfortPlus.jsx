@@ -10,6 +10,10 @@ const ComfortPlus = ({ psList }) => {
 
     return (
         <div className="confortPlusMain">
+            <div className="titleComfortPlusMobile">
+                <h3>КОМФОРТ ПЛЮС</h3>
+            </div>
+
             <div className="comfortPlus_inner">
                 <div className="stenka_left">
                     {group5.map((pc) => (

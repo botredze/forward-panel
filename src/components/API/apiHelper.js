@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const localUrl = 'http://192.168.2.20/api';
-const mainUrl = 'http://77.235.25.68/api';
+const localUrl = 'http://77.235.25.68:8080/api';
+const mainUrl = 'http://77.235.25.68:8080/api';
 
 const AUTH = {
     username: 'prosmotr',

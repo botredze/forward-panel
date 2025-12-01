@@ -36,32 +36,60 @@ const ComputerList = () => {
 
     return (
         <div className="mainContainer">
-            <div className="tarifsSection">
-                <Tarifs />
-            </div>
-            <div className="section comfortSection">
-                <Comfort psList={computerList} />
+            <div className="desktopContainer">
+                <div className="tarifsSection">
+                    <Tarifs />
+                </div>
+                <div className="section comfortSection">
+                    <Comfort psList={computerList} />
+                </div>
+
+                <div className="row">
+                    <div className="section vipSection">
+                        <Vip psList={computerList} />
+                    </div>
+
+                    <div className="section standartComfortSection">
+                        <StandartComfort psList={computerList} />
+                    </div>
+                </div>
+
+                <div className="section comfortPlusSection">
+                    <ComfortPlus psList={computerList} />
+                </div>
+
+                <div className="section premiumSection">
+                    <Premium psList={computerList} />
+
+                    <div className="reception">
+                        <h3>Ресепшн & БАР</h3>
+                    </div>
+                </div>
             </div>
 
-            <div className="row">
-                <div className="section vipSection">
+            <div className="mobileContainer">
+                <div className="section">
+                    <StandartComfort psList={computerList} />
+                </div>
+
+                <div className="section">
+                    <Comfort psList={computerList} />
+                </div>
+
+                <div className="section">
+                    <ComfortPlus psList={computerList} />
+                </div>
+
+                <div className="section">
                     <Vip psList={computerList} />
                 </div>
 
-                <div className="section standartComfortSection">
-                    <StandartComfort psList={computerList} />
+                <div className="section">
+                    <Premium psList={computerList} />
                 </div>
-            </div>
 
-            <div className="section comfortPlusSection">
-                <ComfortPlus psList={computerList} />
-            </div>
-
-            <div className="section premiumSection">
-                <Premium psList={computerList} />
-
-                <div className="reception">
-                    <h3>Ресепшн & БАР</h3>
+                <div className="section">
+                    <Tarifs />
                 </div>
             </div>
         </div>

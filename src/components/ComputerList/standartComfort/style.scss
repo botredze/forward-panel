@@ -25,7 +25,12 @@
   flex-direction: column;
   padding: 20px;
   width: 700px;
-}
+
+  @media (max-width: 500px) {
+    gap: 40px;
+    align-items: center;
+  }
+  }
 
 .standartComfort_inner{
   display: flex;

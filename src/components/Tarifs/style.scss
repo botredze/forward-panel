@@ -1,0 +1,131 @@
+.tarifs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .tarif-table {
+        border-collapse: collapse;
+
+        thead {
+            tr {
+                th {
+                    padding: 0 10px;
+                    text-align: left;
+
+                    div {
+                        margin: 5px;
+                        font-weight: 800;
+                        font-size: 36px;
+                        padding: 5px 20px;
+                        height: 50px;
+                        border: 1px solid black;
+                        border-radius: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    padding: 0 10px;
+                    text-align: left;
+
+                    div {
+                        margin: 5px;
+                        font-weight: 800;
+                        font-size: 36px;
+                        padding: 5px 20px;
+
+                        width: 250px;
+                        height: 50px;
+                        border: 1px solid rgb(70, 63, 63);
+                        border-radius: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+        /* Верхняя ячейка TIME (скругление сверху + padding) */
+        .th-time {
+            padding-top: 20px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+        }
+
+        /* Нижняя ячейка TIME (скругление снизу + padding) */
+        tbody tr:last-child .td-time {
+            padding-bottom: 20px;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+
+        .th-time {
+            background-color: #000;
+            padding: 0 5px 0 5px;
+            padding-top: 20px;
+
+            div {
+                color:rgba(230, 230, 4, 0.67);
+            }
+        }
+        .td-time {
+            background-color: #000;
+            padding: 0 5px 0 5px;
+
+            div {
+                color: rgba(230, 230, 4, 0.67);
+            }
+        }
+
+        .th-comfort {
+            padding-top: 20px;
+        }
+
+        .td-comfort {
+        }
+
+        .th-comfort,
+        .td-comfort {
+        }
+
+        .th-comfort-plus {
+            padding-top: 20px;
+        }
+        .td-comfort-plus {
+        }
+
+        .th-vip div,
+        .td-vip div {
+            color: #000;
+        }
+
+        .th-premium div,
+        .td-premium div {
+            color: #000;
+        }
+    }
+}
+
+.tarifTitle {
+    display: flex;
+    align-self: center;
+    font-size: 72px;
+    font-weight: 800;
+}
+
+.timeDiv {
+    background: rgba(230, 230, 4, 0.67) !important;
+    color: #000 !important;
+}
+
+.blackTitle {
+    background: #000 !important;
+    color: #e5e200 !important;
+}

@@ -1,0 +1,19 @@
+.premiumMain {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px;
+
+    .stenkaTop {
+        padding-left: 180px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .stenkaButtom {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+}

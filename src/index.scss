@@ -1,0 +1,22 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ccc;
+    //background-image: linear-gradient(to right, #e0e0e0 1px, transparent 1px),
+    //    linear-gradient(to bottom, #e0e0e0 1px, transparent 1px);
+    //background-size: 60px 60px;
+}
+
+.App {
+    background: transparent; /* чтобы не перекрывал сетку */
+}

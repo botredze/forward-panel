@@ -1,0 +1,22 @@
+.pcItem {
+  width: 150px;
+  height: 100px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+
+  p {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  .timeLeft {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}

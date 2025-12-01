@@ -1,0 +1,60 @@
+.comfortMain{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+
+  gap: 100px;
+
+  .comfortMain_inner{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 170px;
+
+    .stenka{
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      div{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+      }
+    }
+
+    .seredina_in{
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+
+
+      div{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+      }
+    }
+  }
+}
+
+.comfortTitleSecond{
+  display: flex;
+  align-self: center;
+  border: 5px solid #444444;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 350px;
+
+  h3 {
+    padding: 5px 20px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #4d56c5
+  }
+}
